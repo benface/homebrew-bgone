@@ -5,10 +5,10 @@ class Bgone < Formula
 
   if OS.mac? && Hardware::CPU.intel?
     url "https://github.com/benface/bgone/releases/download/v#{version}/bgone-x86_64-apple-darwin.tar.gz"
-    sha256 ""  # Will be filled after creating release
+    sha256 "042dfd2474e515b83eb9b6fcba234a70884ca7938b87ca460ae60cc121eb0566"
   elsif OS.mac? && Hardware::CPU.arm?
     url "https://github.com/benface/bgone/releases/download/v#{version}/bgone-aarch64-apple-darwin.tar.gz"
-    sha256 ""  # Will be filled after creating release
+    sha256 "c51f781c0c2134a2dae6423360a08cba6bf8096f3856186f7d75e942703aea93"
   elsif OS.linux? && Hardware::CPU.intel?
     url "https://github.com/benface/bgone/releases/download/v#{version}/bgone-x86_64-unknown-linux-gnu.tar.gz"
     sha256 ""  # Will be filled after creating release
