@@ -1,14 +1,14 @@
 class Bgone < Formula
   desc "Ultra-fast CLI tool for removing solid background colors from images"
   homepage "https://github.com/benface/bgone"
-  version "0.3.0"
+  version "0.4.0"
 
   if OS.mac? && Hardware::CPU.intel?
     url "https://github.com/benface/bgone/releases/download/v#{version}/bgone-v#{version}-x86_64-apple-darwin.tar.gz"
-    sha256 "0818326a0682ed304077ebc44b6b6b2af0558d4c8561cb51f1df4673b6789e64"
+    sha256 "f43fe2dffff76cfc4d040326dc4bf54e6b3937818d3c06a835a213a80978b10e"
   elsif OS.mac? && Hardware::CPU.arm?
     url "https://github.com/benface/bgone/releases/download/v#{version}/bgone-v#{version}-aarch64-apple-darwin.tar.gz"
-    sha256 "3bcf23d1bb77eabb97414938c991b8e1607865cea8944bd1dcf24e849c85c057"
+    sha256 "18dad75737772a22f4be8df33ffca6c7ae82d90e4dc38803b9dd8be560f8588c"
   elsif OS.linux? && Hardware::CPU.intel?
     url "https://github.com/benface/bgone/releases/download/v#{version}/bgone-x86_64-unknown-linux-gnu.tar.gz"
     sha256 ""  # Will be filled after creating release
